@@ -3,7 +3,7 @@ import GlobalStyle from "../styles";
 import useSWR, { SWRConfig } from "swr";
 import Layout from "@/components/Layout";
 
-const URL = "https://example-apis.vercel.app/api/art";
+// const URL = "https://example-apis.vercel.app/api/art";
 
 const fetcher = async (url) => {
   const response = await fetch(url);

@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <StyledNavigation>
       <>
-        <li>
-          <StyledLink href="/">Home</StyledLink>
-        </li>
+      <li>
+    <Link href="/">Home</Link>
+    </li>
         <li>
           <StyledLink href="/art-pieces/">Art Pieces</StyledLink>
         </li>

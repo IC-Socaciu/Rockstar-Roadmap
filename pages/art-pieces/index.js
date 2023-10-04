@@ -1,5 +1,6 @@
 import ArtPieces from "../../components/ArtPieces";
 
+
 export default function artPiecesPage({
   data,
   handleToggleFavorite,
@@ -12,6 +13,7 @@ export default function artPiecesPage({
         artPiecesInfo={artPiecesInfo}
         handleToggleFavorite={handleToggleFavorite}
       />
+      
     </>
   );
 }
