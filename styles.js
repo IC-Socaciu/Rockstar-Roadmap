@@ -14,5 +14,6 @@ export default createGlobalStyle`
   body {
     font-family: system-ui;
     margin: 0;
+    background: #36013f;
   }
 `;
