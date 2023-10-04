@@ -7,11 +7,12 @@ export default function Header() {
       <h1>Rockstar Roadmap</h1>
 <Navbar>
   <ul>
-    <li>LINK 1</li>
-    <li>LINK 2</li>
-    <li>LINK 3</li>
-    <li>LINK 4</li>
-    <li>LINK 5</li>
+    <li>Band Tips</li>
+    <li>Styles</li>
+    <li>EPK</li>
+    <li>Rider</li>
+    <li>Graphic Artists</li>
+    <li>Link</li>
   </ul>
 </Navbar>
     </StyledHeader>
@@ -27,7 +28,8 @@ const StyledHeader = styled.header`
   top: 0;
   width: 100%;
   padding: 1rem;
-  background-color: #36013f;
+  background-color: white;
+  color: #36013f;
 `;
 const Navbar = styled.nav`
   display: flex;
@@ -39,7 +41,7 @@ const Navbar = styled.nav`
     list-style: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #36013f;
     li {
       margin: 0 1rem;
     }
