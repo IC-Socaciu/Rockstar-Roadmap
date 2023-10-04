@@ -11,6 +11,7 @@ export default function SpotlightPage({
         artPiecesInfo={artPiecesInfo}
         handleToggleFavorite={handleToggleFavorite}
       />
+ 
     </>
   );
 }
