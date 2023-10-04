@@ -43,6 +43,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
+    
       <Component
         handleToggleFavorite={handleToggleFavorite}
         artPiecesInfo={artPiecesInfo}

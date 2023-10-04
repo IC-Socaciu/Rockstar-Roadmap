@@ -35,7 +35,11 @@ const StyledNavigation = styled.footer`
 `;
 
 const StyledLink = styled.a`
-color: #36013f;
-text-decoration: none;
+  color: #36013f;
+  text-decoration: none;
 `;
 
+const MainContentContainer = styled.div`
+  min-height: calc(100vh - var(--footer-height));
+  padding-bottom: var(--footer-height);
+`;
