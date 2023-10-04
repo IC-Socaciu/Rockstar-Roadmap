@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -10,7 +11,9 @@ export default function Header() {
     <li>Band Tips</li>
     <li>Styles</li>
     <li>EPK</li>
-    <li>Rider</li>
+    <li>
+    <Link href="/rider">Rider</Link>
+    </li>
     <li>Graphic Artists</li>
     <li>Link</li>
   </ul>

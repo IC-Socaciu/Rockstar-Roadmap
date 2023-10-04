@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { styled } from "styled-components";
-import { StyledLink } from "../ArtPieces";
+// import { StyledLink } from "../ArtPieces";
 
-export default function Navigation() {
+export default function Footer() {
   return (
     <StyledNavigation>
       <>
-        <li>
-          <StyledLink href="/">Spotlight</StyledLink>
-        </li>
+      <li>
+    <Link href="/">Home</Link>
+    </li>
         <li>
           <StyledLink href="/art-pieces/">Art Pieces</StyledLink>
         </li>
@@ -34,5 +34,8 @@ const StyledNavigation = styled.footer`
   justify-content: space-between;
 `;
 
-//  Create the component Layout that renders the Navigation component
-//  Apply the Layout component in pages/_app
+const StyledLink = styled.a`
+color: #36013f;
+text-decoration: none;
+`;
+

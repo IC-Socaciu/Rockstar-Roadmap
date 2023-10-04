@@ -1,15 +1,9 @@
-export default function FavouritesPage({
-  data,
-  handleToggleFavorite,
-  artPiecesInfo,
-}) {
+import Favourites from "@/components/Favourites";
+
+export default function FavouritesPage() {
   return (
     <>
-      <Favourites
-        data={data}
-        artPiecesInfo={artPiecesInfo}
-        handleToggleFavorite={handleToggleFavorite}
-      />
+      <Favourites/>
     </>
   );
 }
