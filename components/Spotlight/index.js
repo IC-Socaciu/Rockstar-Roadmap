@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { styled } from "styled-components";
-import { StyledLink } from "../ArtPieces";
+import { StyledLink } from "../AP";
 import ImageWithButton from "../ImageWithButton";
 
 export default function HomePage(){

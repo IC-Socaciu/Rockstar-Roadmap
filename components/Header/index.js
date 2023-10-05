@@ -15,7 +15,7 @@ export default function Header() {
     <Link href="/rider">Rider</Link>
     </li>
     <li>Graphic Artists</li>
-    <li>Link</li>
+    <li>Festivals / Radio Submissions</li>
   </ul>
 </Navbar>
     </StyledHeader>
