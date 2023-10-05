@@ -308,6 +308,7 @@ border: solid 1px;
 color: white;
 border-radius: 5px;
 margin-bottom: 5px;
+background-color: #660f56;
 `;
 
 const HiddenParagraph = styled.p`

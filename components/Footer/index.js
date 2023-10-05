@@ -10,7 +10,7 @@ export default function Footer() {
     <Link href="/landing">Home</Link>
     </li>
         <li>
-          <StyledLink href="/art-pieces/">Art Pieces</StyledLink>
+          <StyledLink href="/merch">Merch</StyledLink>
         </li>
         <li>
           <StyledLink href="/favourites/">Favourites</StyledLink>

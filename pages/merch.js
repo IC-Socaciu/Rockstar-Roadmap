@@ -1,4 +1,4 @@
-import ArtPieces from "../../components/ArtPieces";
+import ArtPieces from "../components/AP";
 import { styled } from "styled-components";
 
 export default function artPiecesPage({
@@ -8,11 +8,11 @@ export default function artPiecesPage({
 }) {
   return (
     
-      <ArtPageTest>This is redirected here to the Art Pieces Page</ArtPageTest>
+      <MerchPageTest>This is redirected here to the Merch Page</MerchPageTest>
     
   );
 }
-const ArtPageTest = styled.h3`
+const MerchPageTest = styled.h3`
 color: white;
 margin-top: 350px;
 `;
