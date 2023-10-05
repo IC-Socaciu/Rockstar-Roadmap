@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import Markdown from "markdown-to-jsx";
 
 
 export default function Rider(){
@@ -14,6 +15,7 @@ GUITARS
 VOCALS 
 
 ASOUND & LIGHTING
+
 We prefer an overall natural sound with minimal processing and effects. The
 drums need not have clicky attack sound, please use gates only when
 unavoidable and with great care. The vocals are best left without reverberation,
@@ -113,6 +115,8 @@ templates, logos or pictures in various file formats. Just get in contact with u
 There’s no corporate identity in our advertising, but a corporate feeling for what
 the band is. We appreciate good design, whether it’s professional or just made
 from the heart.
+
+
 
   </StyledRiderBody>
   </>

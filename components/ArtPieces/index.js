@@ -4,35 +4,10 @@ import { styled } from "styled-components";
 import { StyledFigure } from "../ArtPieceDetails";
 import ImageWithButton from "../ImageWithButton";
 
-export default function ArtPieces({
-  data,
-  handleToggleFavorite,
-  artPiecesInfo,
-}) {
-  if (data) {
-    return (
-      <StyledList>
-        {data.map(({ slug, name, artist, imageSource }) => (
-          <StyledLink href={`/art-pieces/${slug}`} key={slug}>
-            <StyledFigure>
-              <ImageWithButton
-                src={imageSource}
-                alt={`${name} by ${artist}`}
-                width={500}
-                height={500}
-                artPiecesInfo={artPiecesInfo}
-                handleToggleFavorite={handleToggleFavorite}
-                slug={slug}
-              ></ImageWithButton>
-              <figcaption>{`"${name}" by ${artist}`}</figcaption>
-            </StyledFigure>
-          </StyledLink>
-        ))}
-      </StyledList>
-    );
-  }
-  return <h1>Loadin...</h1>;
-}
+export default function MainPage(){
+  return (
+  <h1>TEST MAIN PAGE</h1>
+)}
 
 const StyledList = styled.div`
   margin-top: var(--header-height);
