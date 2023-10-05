@@ -13,7 +13,7 @@ export default function artPiecesPage({
         artPiecesInfo={artPiecesInfo}
         handleToggleFavorite={handleToggleFavorite}
       />
-      
+      <p>Art Pieces Page TBD</p>
     </>
   );
 }
