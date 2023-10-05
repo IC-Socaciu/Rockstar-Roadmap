@@ -4,8 +4,13 @@ import MainPage from "@/components/ArtPieces";
 export default function HomePage(){
   return(
     <>
-    <p>TEST</p>
+    <LandingTest>TEST</LandingTest>
     <MainPage/>
     </>
   )
 }
+
+const LandingTest = styled.h3`
+color: white;
+margin-top: 250px;
+`;

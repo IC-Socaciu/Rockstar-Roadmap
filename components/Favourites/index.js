@@ -5,7 +5,7 @@ import ImageWithButton from "../ImageWithButton";
 
 export default function Favourites() {
   
-  return <h1>Loadin...</h1>;
+  return <h1>Favourites Component...</h1>;
 }
 
 // const StyledList = styled.div`

@@ -7,7 +7,7 @@ export default function Footer() {
     <StyledNavigation>
       <>
       <li>
-    <Link href="/">Home</Link>
+    <Link href="/landing">Home</Link>
     </li>
         <li>
           <StyledLink href="/art-pieces/">Art Pieces</StyledLink>

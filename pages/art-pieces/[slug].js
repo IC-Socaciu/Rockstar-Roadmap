@@ -1,5 +1,6 @@
 import ArtPieceDetails, { BackButton } from "@/components/ArtPieceDetails";
 import { useRouter } from "next/router";
+import Rider from "@/components/Rider";
 
 export default function DetailPage({
   data,
@@ -10,13 +11,15 @@ export default function DetailPage({
   const router = useRouter();
   const pieceSlug = router.query.slug;
   if (!data) {
-    return <p>loading ...</p>;
+    return <p>TEST TEST TEST ...</p>;
   }
   const currentPiece = data.find((piece) => {
     return piece.slug === pieceSlug;
   });
   console.log(currentPiece);
   return (
+    <>
+    <Rider/>
     <ArtPieceDetails
       image={currentPiece.imageSource}
       title={currentPiece.name}
@@ -28,5 +31,6 @@ export default function DetailPage({
       slug={currentPiece.slug}
       artPiecesInfo={artPiecesInfo}
     />
+    </>
   );
 }
