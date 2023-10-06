@@ -31,7 +31,7 @@ const StyledHeader = styled.header`
   top: 0;
   width: 100%;
   padding: 1rem;
-  background-color: white;
+  background-color: #ffb38a;
   color: #36013f;
 `;
 const Navbar = styled.nav`

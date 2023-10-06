@@ -26,7 +26,7 @@ const StyledNavigation = styled.footer`
   width: 100%;
   height: var(--footer-height);
   padding: 2rem;
-  background-color: white;
+  background-color: #ffb38a	;
   text-align: center;
   list-style-type: none;
   display: flex;

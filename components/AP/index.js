@@ -11,10 +11,12 @@ export default function MainPage(){
       <BannerImage src={banner} alt="Banner Image" layout="fill" /> 
       <BannerText>The Vermillion Sky</BannerText> 
     </BannerContainer>
-        <CardGrid>
+    <CardGrid>
         {[...Array(6)].map((_, index) => (
           <Card key={index}>
-  Tip <span>{index + 1}</span>
+            <CardText>
+              Tip <span>{index + 1}</span>
+            </CardText>
           </Card>
         ))}
       </CardGrid>
@@ -27,7 +29,7 @@ export default function MainPage(){
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: auto;  
   margin-right: auto;
  
@@ -37,10 +39,17 @@ const Card = styled.div`
   position: relative;
   width: 100%;
   padding-top: 100%;
-  background-color: #b83253;
+  // background-color: #b83253;
+  
+  background-color: rgba(184, 50, 83, 0.5);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: white;
   &:hover {
     background-color: yellow;
+    color: black;
+    cursor: grab;
   }
 `;
 
