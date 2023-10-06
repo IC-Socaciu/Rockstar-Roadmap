@@ -6,20 +6,34 @@ import ImageWithButton from "../ImageWithButton";
 
 export default function MainPage(){
   return (
-  <h1>TEST MAIN PAGE</h1>
-)}
+ 
+        <CardGrid>
+        {[...Array(6)].map((_, index) => (
+          <Card key={index}>
+            <CardText>Card {index + 1}</CardText>
+          </Card>
+        ))}
+      </CardGrid>
+    );
+  };
+  
 
-const StyledList = styled.div`
-  margin-top: var(--header-height);
-  margin-bottom: var(--footer-height);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 `;
 
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: black;
-  margin-bottom: 2.5rem;
+const Card = styled.div`
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #f5f5f5;
+`;
+
+const CardText = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;

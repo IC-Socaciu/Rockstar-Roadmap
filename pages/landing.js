@@ -1,11 +1,13 @@
-import { styled } from "styled-components";
-import MainPage from "@/components/AP";
+import React, { useState } from 'react';
+import MainPage from '@/components/AP';
 
-export default function HomePage(){
-  return(
+
+export default function HomePage() {
+
+  return (
     <>
     <MainPage/>
-    </>
-  )
-}
+  </>
 
+  )
+};
