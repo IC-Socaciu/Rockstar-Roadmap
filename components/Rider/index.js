@@ -284,7 +284,7 @@ Merchandise        </button>
          Miscellaneous
         </button>
       </section>
-      <section>
+      {/* <section>
         {showPromo ? (
           <p>
 There’s a large amount of promo material we can send to you for
@@ -292,11 +292,12 @@ There’s a large amount of promo material we can send to you for
         flyer and promo templates, logos or pictures in various file formats.
         Just get in contact with us. There’s no corporate identity in our
         advertising, but a corporate feeling for what the band is. We appreciate
-        good design, whether it’s professional or just made from the heart.          </p>
+        good design, whether it’s professional or just made from the heart.          
+        </p>
         ) : null}
         <button onClick={() => showPromo(!setShowPromo)}>
-Advertising and promotion        </button>
-      </section>
+Advertising and promotion </button>
+      </section> */}
     </>
   );
 };
