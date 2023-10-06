@@ -9,12 +9,12 @@ export default function MainPage(){
  <>
     <BannerContainer>
       <BannerImage src={banner} alt="Banner Image" layout="fill" /> 
-      <BannerText>Discover Amazing Art Pieces</BannerText> 
+      <BannerText>The Vermillion Sky</BannerText> 
     </BannerContainer>
         <CardGrid>
         {[...Array(6)].map((_, index) => (
           <Card key={index}>
-            <CardText>Card {index + 1}</CardText>
+  Tip <span>{index + 1}</span>
           </Card>
         ))}
       </CardGrid>
@@ -26,14 +26,22 @@ export default function MainPage(){
   const CardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 4rem;
+  margin-top: 30px;
+  margin-left: auto;  
+  margin-right: auto;
+ 
 `;
 
 const Card = styled.div`
   position: relative;
   width: 100%;
   padding-top: 100%;
-  background-color: #f5f5f5;
+  background-color: #b83253;
+  color: white;
+  &:hover {
+    background-color: yellow;
+  }
 `;
 
 const CardText = styled.div`
@@ -41,6 +49,9 @@ const CardText = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  span {
+    display: block;
+  }
 `;
 const BannerContainer = styled.div`
   position: relative;
@@ -60,4 +71,5 @@ const BannerText = styled.h1`
   color: white;
   font-size: 36px;
   font-weight: bold;
+  text-align: center;
 `; 
