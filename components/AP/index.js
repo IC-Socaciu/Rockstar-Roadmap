@@ -3,10 +3,14 @@ import Link from "next/link";
 import { styled } from "styled-components";
 import { StyledFigure } from "../ArtPieceDetails";
 import ImageWithButton from "../ImageWithButton";
-
+import banner from "/assets/vermillionsky.jpg"
 export default function MainPage(){
   return (
- 
+ <>
+    <BannerContainer>
+      <BannerImage src={banner} alt="Banner Image" layout="fill" /> 
+      <BannerText>Discover Amazing Art Pieces</BannerText> 
+    </BannerContainer>
         <CardGrid>
         {[...Array(6)].map((_, index) => (
           <Card key={index}>
@@ -14,6 +18,7 @@ export default function MainPage(){
           </Card>
         ))}
       </CardGrid>
+      </>
     );
   };
   
@@ -37,3 +42,22 @@ const CardText = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+const BannerContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 400px;
+`;
+
+const BannerImage = styled(Image)`
+  z-index: -1;
+`;
+
+const BannerText = styled.h1`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+`; 
